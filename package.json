@@ -35,10 +35,13 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "sdk",
+  "name": "@sopometa/sdk",
   "author": "cheesekon",
   "module": "dist/sdk.esm.js",
-  "repository": "https://github.com/sopometa/sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sopometa/sdk.git"
+  },
   "size-limit": [
     {
       "path": "dist/sdk.cjs.production.min.js",
@@ -61,5 +64,14 @@
     "@ethersproject/abstract-signer": ">=5.5.0",
     "@ethersproject/bignumber": ">=5.5.0",
     "@ethersproject/contracts": ">=5.5.0"
-  }
+  },
+  "description": "To Mint, Transfer, Burn, And exchange your NFT on SopoMeta",
+  "bugs": {
+    "url": "https://github.com/sopometa/sdk/issues"
+  },
+  "homepage": "https://github.com/sopometa/sdk#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {}
 }
