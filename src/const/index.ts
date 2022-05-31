@@ -1,2 +1,2 @@
-export const ERC721Address = '0x7d4567B7257cf869B01a47E8cf0EDB3814bDb963';
-export const MarketplaceAddress = '0x3469E1DaC06611030AEce8209F07501E9A7aCC69';
+export const ERC721Address = '0x598efcBD0B5b4Fd0142bEAae1a38f6Bd4d8a218d';
+export const MarketplaceAddress = '0x746DFE0F96789e62CECeeA3CA2a9b5556b3AaD6c';
