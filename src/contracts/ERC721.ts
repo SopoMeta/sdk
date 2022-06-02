@@ -3,8 +3,7 @@ import { BigNumber } from '@ethersproject/bignumber';
 import { Contract, ContractTransaction } from '@ethersproject/contracts';
 
 import IERC721 from './Interface/IERC721';
-// import * as ERC721ABI from '../abis/ERC721.json';
-import ERC721Abi from '../abis/ERC721.abi';
+import * as ERC721Abi from '../abis/ERC721.json';
 import { ERC721Address } from '../const';
 
 export class ERC721 implements IERC721 {
@@ -13,7 +12,7 @@ export class ERC721 implements IERC721 {
 
   constructor(_providerSigner: Signer) {
     this.providerSigner = _providerSigner;
-    this.contract = new Contract(ERC721Address, ERC721Abi.abi, this.providerSigner);
+    this.contract = new Contract(ERC721Address, ERC721Abi, this.providerSigner);
   }
 
   async mintonlycreator(

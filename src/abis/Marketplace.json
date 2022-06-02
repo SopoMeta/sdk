@@ -178,6 +178,12 @@
         "internalType": "address",
         "name": "owner",
         "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
       }
     ],
     "name": "Selled",
@@ -235,6 +241,24 @@
       }
     ],
     "name": "acceptoffer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "collectionowner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      }
+    ],
+    "name": "addcollection",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -344,6 +368,25 @@
     "name": "changeprice",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "collectionwhitelist",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -634,6 +677,19 @@
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      }
+    ],
+    "name": "removecollection",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "internalType": "uint256",
         "name": "sopoid",
         "type": "uint256"
@@ -681,5 +737,9 @@
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
   }
 ]
